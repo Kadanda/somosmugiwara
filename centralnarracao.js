@@ -1,4 +1,4 @@
-(function ($) {
+ (function ($) {
             'use strict';
 $(function mud10() {
 $('.aba input').change(function() {
@@ -257,7 +257,7 @@ $('.aba input').change(function() {
     });
               });
                   }(jQuery));
-
+                  
     (function($) {
         'use strict';
 
@@ -308,7 +308,6 @@ $(this).prop("disabled", true);
         });
     }(jQuery));
 
-</script>  <script>
  function soma(){
 
 document.getElementById("resultado00").value="0";
@@ -539,9 +538,9 @@ document.getElementById("resultado08").value = parseInt((- 1.5 * (numbers5 + (1 
 
 document.getElementById("pvrd").value = parseInt((pvd + bva065 + biq066 + resist0124 + bva0125 + biq0126 + (bbq * ((block077 + biq082 + bcd083 + ((block077 / 100) * (ha078 + hr079 + bva080 + bmae081 + bufs019 - debs018))) / 100))) - (dano06 + biq011 + bcd012 + ((dano06 / 100) * (ha07 + hr08 + bva09 + bmae010 + bufs01 - debs018)) + (daf * (pvd / 100)) + (dac * ((dano06 + biq011 + bcd012 + ((dano06 / 100) * (ha07 + hr08 + bva09 + bmae010 + bufs01 - debs018))) / 100))));
 
-document.getElementById("med1").value = parseInt((((notan00 * 10) + (notan01 * <img src="https://2img.net/i/fa/i/smiles/icon_cool.gif" alt="Cool" longdesc="23" /> + (notan02 * 6) + (notan03 * 4) + (notan04 * 2)) / 30));
+document.getElementById("med1").value = parseInt((((notan00 * 10) + (notan01 * 8) + (notan02 * 6) + (notan03 * 4) + (notan04 * 2)) / 30));
 
-document.getElementById("med2").value = parseInt((((notan05 * 10) + (notan06 * <img src="https://2img.net/i/fa/i/smiles/icon_cool.gif" alt="Cool" longdesc="23" /> + (notan07 * 6) + (notan08 * 4) + (notan09 * 2)) / 30));
+document.getElementById("med2").value = parseInt((((notan05 * 10) + (notan06 * 8) + (notan07 * 6) + (notan08 * 4) + (notan09 * 2)) / 30));
 
 document.getElementById("resultadotdi").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - 125);
 document.getElementById("resultadotd").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - 115);
@@ -549,4 +548,4 @@ document.getElementById("resultadotm").value = parseInt((mnar01 + atp + numbers4
 document.getElementById("resultadotf").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - 70);
 document.getElementById("resultadotmf").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - 35);
 document.getElementById("resultadotper").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - tper);
-}  
+}   
