@@ -1,4 +1,4 @@
- (function ($) {
+$( document ).ready(function() { (function ($) {
             'use strict';
 $(function mud10() {
 $('.aba input').change(function() {
@@ -548,4 +548,5 @@ document.getElementById("resultadotm").value = parseInt((mnar01 + atp + numbers4
 document.getElementById("resultadotf").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - 70);
 document.getElementById("resultadotmf").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - 35);
 document.getElementById("resultadotper").value = parseInt((mnar01 + atp + numbers4 + (bsor/2)) - tper);
-}   
+}  
+                                });
