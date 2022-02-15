@@ -257,7 +257,7 @@ $('.aba input').change(function() {
     });
               });
                   }(jQuery));
-                </script><script language="Javascript">
+
     (function($) {
         'use strict';
 
