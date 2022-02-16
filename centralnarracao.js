@@ -59,7 +59,7 @@ button4.addEventListener('click', function() {
         event.preventDefault();
         $(this).find('button[type="submit"]').text('Postando...');
         var faid = $('#fa-generated-form').find('#campo5').val();
-        setTimeout(function () {
+       
               $.post('/post', {
                   t: faid,
                   message: $('#fa-generated-message').val().trim(),
@@ -71,11 +71,12 @@ button4.addEventListener('click', function() {
                                     'Você será redirecinado para a mensagem.',
                                     'success'
                                 );
+                                 setTimeout(function () {
             location.href = '/t' + faid + '-';
               }).fail(function () {
                   alert('Houve um erro! Tente novamente!');
               });
-        }, 600);
+        }, 1000);
           });
       });
     }(jQuery));
