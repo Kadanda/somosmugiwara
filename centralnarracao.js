@@ -67,7 +67,10 @@ button4.addEventListener('click', function() {
                   tid: $('[name="tid"]:first').val(),
                   post: 1,
               }).done(function () {
-                  alert('Postado com sucesso. Você será redirecionado para o tópico...');
+                  Swal.fire('Apagado!',
+                                    'O post foi apagado com sucesso.',
+                                    'success'
+                                );
             location.href = '/t' + faid + '-';
               }).fail(function () {
                   alert('Houve um erro! Tente novamente!');
