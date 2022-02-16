@@ -67,8 +67,8 @@ button4.addEventListener('click', function() {
                   tid: $('[name="tid"]:first').val(),
                   post: 1,
               }).done(function () {
-                  Swal.fire('Apagado!',
-                                    'O post foi apagado com sucesso.',
+                  Swal.fire('Postado',
+                                    'Você será redirecinado para a mensagem.',
                                     'success'
                                 );
             location.href = '/t' + faid + '-';
