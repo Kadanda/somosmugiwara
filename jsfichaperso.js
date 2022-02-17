@@ -189,3 +189,53 @@ document.getElementById("campo212").value = parseInt(((will*1) + log + eng + int
 document.getElementById("campo213").value = parseInt((((per*2.5) + (will*1.5) + (vgr*1))/2)*1.2);
 
 }
+
+ (function ($) {
+    	'use strict';
+
+    	$(window).on('load', function () {
+    		$('#fa-generated-form').on('submit', function (event) {
+         event.preventDefault();
+         $(this).find('button.post-button[type="submit"]').text('Enviando a ficha.');
+         setTimeout(function () {
+    			  $.post('/post', {
+    			  	subject: $('#fa-generated-title').val().trim(),
+    				  f: 5,
+    			  	message: $('#fa-generated-message').val().trim(),
+    			  	mode: 'newtopic',
+    			  	tid: $('[name="tid"]:first').val(),
+    			  	post: 1,
+    		  	}).done(function () {
+    			  	alert('Postado com sucesso. Você será redirecionado para o subfórum com o novo tópico...');
+    			  	location.pathname = '/f5-';
+    			  }).fail(function () {
+    			  	alert('Houve um erro! Tente novamente!');
+    			  });
+         }, 600);
+    		});
+    	});
+    }(jQuery));
+
+$(document).ready(function(){
+          $("input[id='tipo50']").click(function(){
+              var $this = $(this);
+ 
+              if(!$this.is(':checked')) return;
+ 
+    $([
+    'input',
+    'textarea',
+    'select'
+    ].join(',')).prop('disabled', true);
+    
+    $([
+    'input',
+    'textarea',
+    'select'
+    ].join(',')).css({"background-color": "#ddd", "color": "#333"});
+ 
+ 
+          });
+      });
+
+$(document).ready(function(){$("#but0").click(function(){$(".boxini").slideToggle(),$(".infopes").slideToggle()}),$("#but1").click(function(){$(".tnar").slideToggle(),$(".infopes").slideToggle(),$(".batri").slideToggle()}),$("#but00").click(function(){$(".boxini").slideToggle(),$(".infopes").slideToggle()}),$("#but10").click(function(){$(".tnar").slideToggle(),$(".infopes").slideToggle(),$(".batri").slideToggle()}),$("#but2").click(function(){$(".batri").slideToggle(),$(".biobox").slideToggle()}),$("#but3").click(function(){$(".biobox").slideToggle(),$(".ppebox").slideToggle()}),$("#but20").click(function(){$(".tnar").slideToggle(),$(".batri").slideToggle(),$(".biobox").slideToggle()}),$("#but30").click(function(){$(".biobox").slideToggle(),$(".ppebox").slideToggle()}),$("#but4").click(function(){$(".ppebox").slideToggle(),$(".boxvd").slideToggle()}),$("#but40").click(function(){$(".ppebox").slideToggle(),$(".boxvd").slideToggle()}),$("#but5").click(function(){$(".tnar").slideToggle(),$(".boxvd").slideToggle(),$(".boxfinal").slideToggle()}),$("#but50").click(function(){$(".tnar").slideToggle(),$(".boxvd").slideToggle(),$(".boxfinal").slideToggle()})});
