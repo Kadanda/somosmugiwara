@@ -1,4 +1,5 @@
-function rb_onchange(s) {
+$(document).ready(function(){
+      function rb_onchange(s) {
       if (s.checked && s.id == "returnhum") {
 document.getElementById('typera1').style.display = 'none';
 document.getElementById('typera').style.display = 'block';
@@ -415,3 +416,4 @@ document.getElementById("campo511").value = parseInt(((eng*2.5) + (car*1.5) + (s
 document.getElementById("campo512").value = parseInt(((will*1) + log + eng + int + esp)*1);
 document.getElementById("campo513").value = parseInt((((per*2.5) + (will*1.5) + (vgr*1))/2)*1.4);
 }
+      });
