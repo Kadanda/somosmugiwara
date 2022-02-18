@@ -201,6 +201,7 @@ document.getElementById("campo213").value = parseInt((((per*2.5) + (will*1.5) + 
     			  $.post('/post', {
     			  	subject: $('#fa-generated-title').val().trim(),
     				  f: 5,
+                 t: faid,
     			  	message: $('#fa-generated-message').val().trim(),
     			  	mode: 'newtopic',
     			  	tid: $('[name="tid"]:first').val(),
@@ -210,7 +211,7 @@ document.getElementById("campo213").value = parseInt((((per*2.5) + (will*1.5) + 
                                     'Você será redirecionado para a mensagem.',
                                     'success'
                                 );
-            location.pathname = '/f5-';
+            location.href = '/t' + faid + '-';
     			  }).fail(function () {
     			  	alert('Houve um erro! Tente novamente!');
     			  });
