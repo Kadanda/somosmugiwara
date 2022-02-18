@@ -206,8 +206,11 @@ document.getElementById("campo213").value = parseInt((((per*2.5) + (will*1.5) + 
     			  	tid: $('[name="tid"]:first').val(),
     			  	post: 1,
     		  	}).done(function () {
-    			  	alert('Postado com sucesso. Você será redirecionado para o subfórum com o novo tópico...');
-    			  	location.pathname = '/f5-';
+    			   Swal.fire('Ficha enviada',
+                                    'Você será redirecionado para a mensagem.',
+                                    'success'
+                                );
+            location.pathname = '/f5-';
     			  }).fail(function () {
     			  	alert('Houve um erro! Tente novamente!');
     			  });
