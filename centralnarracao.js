@@ -113,9 +113,9 @@ var defs = $('#conteudo11 .boxx #tableone .conteudo3i').text();
     
                 var number = $('.fa-input-random').val();
                 var config = {
-                  minus: '<span class="nega">'+ defs + ' obteve sucesso em esquivar-se do golpe. Fim dos testes.</span>',
-                  zero : '<span class="suce">'+ atak + ' obteve sucesso em acertar o golpe. Prossiga para os testes de dano e bloqueio.</span>',
-                  plus : '<span class="suce">'+ atak + ' obteve sucesso em acertar o golpe. Prossiga para os testes de dano e bloqueio.</span>'
+                  minus: '<span class="nega"><span>'+ defs + '</span> obteve sucesso em esquivar-se do golpe. Fim dos testes.</span>',
+                  zero : '<span class="suce"><span>'+ atak + '</span> obteve sucesso em acertar o golpe. Prossiga para os testes de dano e bloqueio.</span>',
+                  plus : '<span class="suce"><span>'+ atak + '</span> obteve sucesso em acertar o golpe. Prossiga para os testes de dano e bloqueio.</span>'
                 };
                 var setHTML = function (html) {
                   $('.fa-random-result').html(html);
