@@ -67,13 +67,27 @@ button4.addEventListener('click', function() {
                   tid: $('[name="tid"]:first').val(),
                   post: 1,
               }).done(function () {
-                  Swal.fire('Postado',
-                                    'Você será redirecinado para a mensagem.',
-                                    'success'
-                                );
-            location.href = '/t' + faid + '-';
+                   Swal.fire({
+                     icon: 'success',
+                     title: 'Postado com sucesso!',
+                     html: 'Você será redicionado ao fórum',
+                     timer: 3000,
+                     allowEscapeKey: false,
+                     showConfirmButton: false,
+                     timerProgressBar: true
+               }).then((result) => {
+                     if (
+                         result.dismiss === Swal.DismissReason.timer
+                         ) {
+                   location.href = '/t' + faid + '-';
+                   }
+               });
               }).fail(function () {
-                  alert('Houve um erro! Tente novamente!');
+                  Swal.fire({
+                     icon: 'error',
+                     title: 'Erro!',
+                     text: 'Tente novamente ou entre em contato',
+                  });
               });
 
           });
