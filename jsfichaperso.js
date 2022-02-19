@@ -201,19 +201,32 @@ document.getElementById("campo213").value = parseInt((((per*2.5) + (will*1.5) + 
     			  $.post('/post', {
     			  	subject: $('#fa-generated-title').val().trim(),
     				  f: 5,
-                 t: faid,
     			  	message: $('#fa-generated-message').val().trim(),
     			  	mode: 'newtopic',
     			  	tid: $('[name="tid"]:first').val(),
     			  	post: 1,
     		  	}).done(function () {
-    			   Swal.fire('Ficha enviada',
-                                    'Você será redirecionado para a mensagem.',
-                                    'success'
-                                );
-            location.href = '/t' + faid + '-';
+    			   Swal.fire({
+                     icon: 'success',
+                     title: 'Postado com sucesso!',
+                     html: 'Você será redicionado ao fórum',
+                     timer: 3000,
+                     allowEscapeKey: false,
+                     showConfirmButton: false,
+                     timerProgressBar: true
+               }).then((result) => {
+                     if (
+                         result.dismiss === Swal.DismissReason.timer
+                         ) {
+                   location.href = 'http://' + location.host + '/f5-';
+                   }
+               });
     			  }).fail(function () {
-    			  	alert('Houve um erro! Tente novamente!');
+    			   Swal.fire({
+                     icon: 'error',
+                     title: 'Erro!',
+                     text: 'Tente novamente ou entre em contato',
+                  });
     			  });
          }, 600);
     		});
