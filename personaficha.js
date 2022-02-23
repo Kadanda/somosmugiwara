@@ -205,7 +205,7 @@ document.getElementById("campo213").value = parseInt((((per*2.5) + (will*1.5) + 
     			  	mode: 'newtopic',
     			  	tid: $('[name="tid"]:first').val(),
     			  	post: 1,
-    		  	}).done(function () {
+    		  	}).done(function (e) {
     			   Swal.fire({
                      icon: 'success',
                      title: 'Postado com sucesso!',
