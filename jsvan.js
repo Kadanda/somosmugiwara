@@ -1,33 +1,32 @@
 const habilidadesDesvantagens = [
     {
-        nome: 'Adaptador',
-        pontos: -2,
-        descricao: 'Você tem facilidade para lidar com qualquer tipo de arma, sabendo usá-las mesmo que nunca as tenha visto. Entretanto não é capaz de usar tais outras armas tão bem quanto a do seu estilo de combate, mas ainda as usando com certa maestria. Pode ser adquirida nas aventuras, com 3 páginas de treinamento. Players sem essa vantagem tem seu Acerto/Mira reduzido em 50% ao usar armas que não sejam de seu estilo de combate.'
-    },
-    {
-        nome: 'Ambidestria',
-        pontos: -2,
-        descricao: 'Enquanto uns tem maestria com somente uma mão para fazer certas coisas, você, seu filho da mãe, sabe usar as duas mãos pra qualquer coisa. Pode ser adquirida nas aventuras, com 2 páginas de treino. Players sem essa vantagem tem seu Acerto/Mira reduzida em 50% e Dano/Ataque reduzida em 25% ao realizar ações com sua mão não hábil.'
-    },
-    {
         nome: 'Amor Verdadeiro',
         pontos: -4,
-        descricao: 'O personagem possui uma pessoa quem ela ama de verdade. Esse amor é tão forte, que ele se torna mais forte toda vez que vai proteger a pessoa amada, mesmo que o amor não seja recíproco. Pode ser adquirida nas aventuras (Conhecendo algum npc ou player) e na criação do personagem (Terá que criar um npc na história). Essa vantagem garante 20% de bônus em Defesa/Bloqueio e bônus de 10% nos outros atributos (Esquiva/Evasão e Acerto/Mira) em toda batalha que o usuário proteger a pessoa que ama.'
+        descricao: 'O personagem possui uma pessoa quem ela ama de verdade. Esse amor é tão forte, que ele se torna mais forte toda vez que vai proteger a pessoa amada, mesmo que o amor não seja recíproco. Pode ser adquirida nas aventuras (Conhecendo algum npc ou player) e na criação do personagem (Terá que criar um npc na história). Essa vantagem garante 20% de bônus em Defesa/Bloqueio e bônus de 10% nos outros atributos (Esquiva/Evasão e Acerto/Mira) em toda batalha que o usuário proteger a pessoa que ama.',
+        restricoes: 'Pode ser adquirida nas aventuras (Conhecendo algum npc ou player) e na criação do personagem (Terá que criar um npc na história).'
     },
     {
-        nome: 'Assexuado(a)',
+        nome: 'Adaptador',
         pontos: -2,
-        descricao: 'As personagens que possuem essa vantagem, por uma razão muito estranha, não se interessam por sexo. Isso não quer dizer que elas nunca farão ou não poderão fazer, elas podem, mas isso é a última vontade delas em uma lista bem extensa. Por isso, não importa o quanto uma pessoa tente, nunca conseguirá seduzir uma pessoa com essa vantagem de primeira. Somente um pouco de convivência pode fazer com que essa pessoa se interesse sexualmente em outra. Essa vantagem não tem nada a ver com não gostar de certo sexo, quem a possui realmente não vai ligar de modo algum pra nenhum ser que tente seduzi-lo, seja homem ou mulher. Pode ser adquirida apenas na Criação do Personagem. Essa vantagem permite que a personagem seja imune à tentativas de sedução.'
+        descricao: 'Você tem facilidade para lidar com qualquer tipo de arma, sabendo usá-las mesmo que nunca as tenha visto. Entretanto não é capaz de usar tais outras armas tão bem quanto a do seu estilo de combate, mas ainda as usando com certa maestria. Pode ser adquirida nas aventuras, com 3 páginas de treinamento. Players sem essa vantagem tem seu Acerto/Mira reduzido em 50% ao usar armas que não sejam de seu estilo de combate.',
+        restricoes: 'Pode ser adquirida nas aventuras, com 3 páginas de treinamento.'
     },
     {
-        nome: 'Beberrão',
-        pontos: -2,
-        descricao: 'Seu personagem não consegue recusar bebida alcoólica mas, felizmente, consegue beber mais que um boi. Não importa a quantidade de álcool que ingira, jamais ficará bêbado. Pode ser adquirida nas aventuras, tentando superar seus limites na bebida.'
+        nome: 'Ultra Sexy',
+        pontos: -4,
+        descricao: 'O personagem conseguiu o que muitas pessoas vaidosas buscam a vida inteira: um corpo perfeitamente sensual, capaz de fazer qualquer ser do sexo oposto - e até do mesmo sexo - ficarem embasbacados com tamanha beleza no corpo de uma pessoa só. Pode ser adquirida apenas na Criação do Personagem. Acrescenta 50% em Manipular/Enganar, caso o oponente seja do sexo oposto e 25% caso seja do mesmo sexo.',
+        restricoes: 'Pode ser adquirida apenas na Criação do Personagem.'
     },
     {
-        nome: 'Boa Memória',
-        pontos: -2,
-        descricao: 'Sua memória é impressionante. Você consegue se lembrar do cheiro do perfume, qual era a cor da raiz do cabelo e o que ouviu numa noite com uma pessoa especial. Se você conversa com uma pessoa num encontro, no outro encontro você já lembra as preferências da outra pessoa, ou seja, consegue se lembrar dos mínimos detalhes. Pode ser adquirida apenas na Criação do Personagem. Não pode ser usada em conjunto com desvantagem Esquecido nem Falsas Lembranças.'
+        nome: 'Podre de Rico',
+        pontos: -5,
+        descricao: 'Agora sim, provavelmente você é filho do homem mais rico do mundo, ou teve um passado em que conquistou boa parte dessa riqueza do mundo. Pode ser adquirida apenas na Criação do Personagem. Inicialmente começa com 10 milhões de Berries.',
+        restricoes: 'Pode ser adquirida apenas na Criação do Personagem.'
+    },
+    {
+        nome: 'Organismo Forte',
+        pontos: -5,
+        descricao: 'Seu sistema imunológico é poderoso e, por isso, você raramente fica doente, isso se ficar. No caso de ficar, com certeza após alguns dias estará melhor novamente, como dizem, pronto para outra. Quem possui essa vantagem possui resistência contra envenenamentos e não sofre tanto com doenças e patologias. Pode ser adquirida apenas na Criação do Personagem. Dano reduzido em 50% contra venenos.',
+        restricoes: 'Pode ser adquirida apenas na Criação do Personagem.'
     }
-    // Adicione as outras habilidades e desvantagens aqui
 ];
